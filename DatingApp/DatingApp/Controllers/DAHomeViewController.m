@@ -69,31 +69,38 @@
     carousel.type = iCarouselTypeCustom;
     carousel.bounces = NO;
     [carousel reloadData];
+    carousel.alpha = 0;
     
-    [carousel scrollToItemAtIndex:1 animated:YES];
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0.83 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
-        self.photos = [self.photos subarrayWithRange:NSMakeRange(1, self.photos.count - 1)];
-        self.bluredPhotos = [self.bluredPhotos subarrayWithRange:NSMakeRange(1, self.bluredPhotos.count - 1)];
-        carousel.currentItemIndex = 0;
-        [carousel reloadData];
-    });
+    self.notificationPanel = [DAUserPanelView create];
+    self.notificationPanel.center = CGPointMake(160, 60);
+    //self.notificationPanel.backgroundColor = [UIColor redColor];
+    [self.view addSubview:self.notificationPanel];
     
     CGRect rect = self.paging.frame;
     CGPoint center = self.paging.center;
-    rect.size.height = 300;
+    rect.size.height = 200;
     rect.origin.y = center.y - rect.size.height / 2;
     self.paging.frame = rect;
+    self.paging.alpha = 0;
     
-    [UIView animateWithDuration:0.8
-                     animations:^{
-                         CGRect rect = self.paging.frame;
-                         CGPoint center = self.paging.center;
-                         rect.size.height = 50;
-                         rect.origin.y = center.y - rect.size.height / 2;
-                         self.paging.frame = rect;
-                     } completion:^(BOOL finished) {
-                         
-                     }];
+    [self.notificationPanel startAnimate:^{
+        carousel.alpha = 1.0;
+        [carousel scrollToItemAtIndex:1 animated:YES];
+        [UIView animateWithDuration:0.8
+                         animations:^{
+                             CGRect rect = self.paging.frame;
+                             CGPoint center = self.paging.center;
+                             rect.size.height = 50;
+                             rect.origin.y = center.y - rect.size.height / 2;
+                             self.paging.frame = rect;
+                             self.paging.alpha = 1.0;
+                         } completion:^(BOOL finished) {
+                             self.photos = [self.photos subarrayWithRange:NSMakeRange(1, self.photos.count - 1)];
+                             self.bluredPhotos = [self.bluredPhotos subarrayWithRange:NSMakeRange(1, self.bluredPhotos.count - 1)];
+                             carousel.currentItemIndex = 0;
+                             [carousel reloadData];
+                         }];
+    }];
 }
 
 - (void)didReceiveMemoryWarning
