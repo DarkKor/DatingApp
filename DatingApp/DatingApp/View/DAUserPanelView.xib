@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="SXg-h6-lnc" customClass="DAUserPanelView">
+            <rect key="frame" x="0.0" y="0.0" width="270" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="FMa-Ki-59V">
+                    <rect key="frame" x="0.0" y="0.0" width="270" height="75"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="top_bar_background.png" id="DHd-ov-zi6">
+                            <rect key="frame" x="0.0" y="0.0" width="270" height="75"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <rect key="contentStretch" x="0.49999999999999994" y="0.0" width="0.0" height="1"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="S6Z-ap-S1X" userLabel="Button - people">
+                            <rect key="frame" x="20" y="23" width="30" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="people_icon.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="people_icon_selected.png"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wZy-Gf-rF7" userLabel="Button - look">
+                            <rect key="frame" x="60" y="23" width="30" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="look_icon.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="look_icon_selected.png"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="NbB-K1-OwZ" userLabel="Button - like">
+                            <rect key="frame" x="100" y="23" width="30" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="like_icon.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="like_icon_selected.png"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="IhM-A9-Rav" userLabel="Button - chat">
+                            <rect key="frame" x="140" y="23" width="30" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="chat_icon.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="chat_icon_selected.png"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="t1q-MS-xv2" userLabel="Button - avatar">
+                    <rect key="frame" x="189" y="18" width="72" height="72"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="top_bar_ellipse.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <view alpha="0.0" contentMode="scaleToFill" id="RoP-EN-Pec">
+                    <rect key="frame" x="132" y="59" width="6" height="6"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="top_bar_white_marker.png" id="SOQ-tf-aDj">
+                            <rect key="frame" x="0.0" y="0.0" width="6" height="6"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" id="Mdr-bg-d96">
+                    <rect key="frame" x="192" y="19" width="60" height="60"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user.png" id="8U1-HZ-bD8">
+                            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="btnAvatar" destination="t1q-MS-xv2" id="XiE-kM-bKq"/>
+                <outlet property="btnChat" destination="IhM-A9-Rav" id="5nB-4h-pDC"/>
+                <outlet property="btnLike" destination="NbB-K1-OwZ" id="3s7-O6-yCe"/>
+                <outlet property="btnLook" destination="wZy-Gf-rF7" id="5EH-kH-wOC"/>
+                <outlet property="btnPeople" destination="S6Z-ap-S1X" id="QzR-bg-ljF"/>
+                <outlet property="container" destination="FMa-Ki-59V" id="y7I-Zy-ha8"/>
+                <outlet property="cursor" destination="RoP-EN-Pec" id="CVj-7S-M3P"/>
+                <outlet property="imgAvatar" destination="8U1-HZ-bD8" id="0Uc-Iy-B1s"/>
+                <outlet property="vAvatar" destination="Mdr-bg-d96" id="Rum-st-Q36"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="chat_icon.png" width="30" height="30"/>
+        <image name="chat_icon_selected.png" width="30" height="30"/>
+        <image name="like_icon.png" width="30" height="30"/>
+        <image name="like_icon_selected.png" width="30" height="30"/>
+        <image name="look_icon.png" width="30" height="30"/>
+        <image name="look_icon_selected.png" width="30" height="30"/>
+        <image name="people_icon.png" width="30" height="30"/>
+        <image name="people_icon_selected.png" width="30" height="30"/>
+        <image name="top_bar_background.png" width="37" height="75"/>
+        <image name="top_bar_ellipse.png" width="72" height="72"/>
+        <image name="top_bar_white_marker.png" width="6" height="6"/>
+        <image name="user.png" width="102" height="105"/>
+    </resources>
+</document>

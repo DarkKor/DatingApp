@@ -8,7 +8,21 @@
 
 #import <UIKit/UIKit.h>
 #import "DAViewController.h"
+#import "iCarousel.h"
+#import "UIImage+ImageEffects.h"
+#import "DAPagingView.h"
+#import "DAUserPanelView.h"
 
-@interface DAHomeViewController : DAViewController
+@interface DAHomeViewController : DAViewController <iCarouselDataSource, iCarouselDelegate>
+{
+    iCarousel *carousel;
+}
+
+@property (nonatomic, strong) IBOutlet iCarousel *carousel;
+
+@property (nonatomic, strong) IBOutlet UIImageView *imgBack1;
+@property (nonatomic, strong) IBOutlet UIImageView *imgBack2;
+@property (nonatomic, strong) IBOutlet DAPagingView *paging;
+@property (nonatomic, strong) IBOutlet DAUserPanelView *notificationPanel;
 
 @end
