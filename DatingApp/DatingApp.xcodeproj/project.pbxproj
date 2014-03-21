@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6F09AC4C18DC2AF200F11549 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F09AC4B18DC2AF200F11549 /* iCarousel.m */; };
+		6F09AC4E18DC2B0400F11549 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F09AC4D18DC2B0400F11549 /* QuartzCore.framework */; };
+		6F09AC5618DC2BB800F11549 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6F09AC5018DC2BB800F11549 /* 1.jpg */; };
+		6F09AC5718DC2BB800F11549 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6F09AC5118DC2BB800F11549 /* 2.jpg */; };
+		6F09AC5818DC2BB800F11549 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6F09AC5218DC2BB800F11549 /* 3.jpg */; };
+		6F09AC5918DC2BB800F11549 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6F09AC5318DC2BB800F11549 /* 4.jpg */; };
+		6F09AC5A18DC2BB800F11549 /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6F09AC5418DC2BB800F11549 /* 5.jpg */; };
+		6F09AC5B18DC2BB800F11549 /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6F09AC5518DC2BB800F11549 /* 6.jpg */; };
+		6F09AC5E18DC32CB00F11549 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F09AC5D18DC32CB00F11549 /* UIImage+ImageEffects.m */; };
+		6F09AC6118DC39B500F11549 /* DAPagingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F09AC6018DC39B500F11549 /* DAPagingView.m */; };
+		6F09AC6318DC3A6000F11549 /* top_bar_white_marker@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F09AC6218DC3A6000F11549 /* top_bar_white_marker@2x.png */; };
+		6F2E15D218DC28A900F32A58 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F2E15CE18DC28A900F32A58 /* Default-568h@2x.png */; };
+		6F2E15D318DC28A900F32A58 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F2E15CF18DC28A900F32A58 /* Default@2x.png */; };
+		6F2E15D418DC28A900F32A58 /* default_background-568h@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6F2E15D018DC28A900F32A58 /* default_background-568h@2x.jpg */; };
+		6F2E15D518DC28A900F32A58 /* default_background@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6F2E15D118DC28A900F32A58 /* default_background@2x.jpg */; };
+		84F5677818DB6E1100F2C39E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F5677718DB6E1100F2C39E /* Foundation.framework */; };
+		84F5677A18DB6E1100F2C39E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F5677918DB6E1100F2C39E /* CoreGraphics.framework */; };
+		84F5677C18DB6E1100F2C39E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F5677B18DB6E1100F2C39E /* UIKit.framework */; };
+		84F5678218DB6E1100F2C39E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84F5678018DB6E1100F2C39E /* InfoPlist.strings */; };
+		84F5678418DB6E1100F2C39E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F5678318DB6E1100F2C39E /* main.m */; };
+		84F5678818DB6E1100F2C39E /* DAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F5678718DB6E1100F2C39E /* DAAppDelegate.m */; };
+		84F5678A18DB6E1100F2C39E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F5678918DB6E1100F2C39E /* Images.xcassets */; };
+		84F5679118DB6E1100F2C39E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F5679018DB6E1100F2C39E /* XCTest.framework */; };
+		84F5679218DB6E1100F2C39E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F5677718DB6E1100F2C39E /* Foundation.framework */; };
+		84F5679318DB6E1100F2C39E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F5677B18DB6E1100F2C39E /* UIKit.framework */; };
+		84F5679B18DB6E1100F2C39E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84F5679918DB6E1100F2C39E /* InfoPlist.strings */; };
+		84F5679D18DB6E1100F2C39E /* DatingAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F5679C18DB6E1100F2C39E /* DatingAppTests.m */; };
+		84F567A718DB6E5300F2C39E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F567A618DB6E5300F2C39E /* MainStoryboard.storyboard */; };
+		84F567AD18DB6EAE00F2C39E /* DAHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F567AC18DB6EAE00F2C39E /* DAHomeViewController.m */; };
+		84F567B018DB6EBC00F2C39E /* DAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F567AF18DB6EBC00F2C39E /* DAViewController.m */; };
+		84F567B418DB703400F2C39E /* DAUserPanelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F567B318DB703400F2C39E /* DAUserPanelView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84F5679418DB6E1100F2C39E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84F5676C18DB6E1100F2C39E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84F5677318DB6E1100F2C39E;
+			remoteInfo = DatingApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6F09AC4A18DC2AF200F11549 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		6F09AC4B18DC2AF200F11549 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		6F09AC4D18DC2B0400F11549 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6F09AC5018DC2BB800F11549 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		6F09AC5118DC2BB800F11549 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		6F09AC5218DC2BB800F11549 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		6F09AC5318DC2BB800F11549 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		6F09AC5418DC2BB800F11549 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
+		6F09AC5518DC2BB800F11549 /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
+		6F09AC5C18DC32CB00F11549 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		6F09AC5D18DC32CB00F11549 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		6F09AC5F18DC39B500F11549 /* DAPagingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAPagingView.h; sourceTree = "<group>"; };
+		6F09AC6018DC39B500F11549 /* DAPagingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAPagingView.m; sourceTree = "<group>"; };
+		6F09AC6218DC3A6000F11549 /* top_bar_white_marker@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "top_bar_white_marker@2x.png"; sourceTree = "<group>"; };
+		6F2E15CE18DC28A900F32A58 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		6F2E15CF18DC28A900F32A58 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		6F2E15D018DC28A900F32A58 /* default_background-568h@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "default_background-568h@2x.jpg"; sourceTree = "<group>"; };
+		6F2E15D118DC28A900F32A58 /* default_background@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "default_background@2x.jpg"; sourceTree = "<group>"; };
+		84F5677418DB6E1100F2C39E /* DatingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DatingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F5677718DB6E1100F2C39E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		84F5677918DB6E1100F2C39E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		84F5677B18DB6E1100F2C39E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		84F5677F18DB6E1100F2C39E /* DatingApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DatingApp-Info.plist"; sourceTree = "<group>"; };
+		84F5678118DB6E1100F2C39E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		84F5678318DB6E1100F2C39E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84F5678518DB6E1100F2C39E /* DatingApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DatingApp-Prefix.pch"; sourceTree = "<group>"; };
+		84F5678618DB6E1100F2C39E /* DAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DAAppDelegate.h; sourceTree = "<group>"; };
+		84F5678718DB6E1100F2C39E /* DAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DAAppDelegate.m; sourceTree = "<group>"; };
+		84F5678918DB6E1100F2C39E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		84F5678F18DB6E1100F2C39E /* DatingAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DatingAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F5679018DB6E1100F2C39E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		84F5679818DB6E1100F2C39E /* DatingAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DatingAppTests-Info.plist"; sourceTree = "<group>"; };
+		84F5679A18DB6E1100F2C39E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		84F5679C18DB6E1100F2C39E /* DatingAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DatingAppTests.m; sourceTree = "<group>"; };
+		84F567A618DB6E5300F2C39E /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		84F567AB18DB6EAE00F2C39E /* DAHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAHomeViewController.h; sourceTree = "<group>"; };
+		84F567AC18DB6EAE00F2C39E /* DAHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAHomeViewController.m; sourceTree = "<group>"; };
+		84F567AE18DB6EBC00F2C39E /* DAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAViewController.h; sourceTree = "<group>"; };
+		84F567AF18DB6EBC00F2C39E /* DAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAViewController.m; sourceTree = "<group>"; };
+		84F567B218DB703400F2C39E /* DAUserPanelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAUserPanelView.h; sourceTree = "<group>"; };
+		84F567B318DB703400F2C39E /* DAUserPanelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAUserPanelView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84F5677118DB6E1100F2C39E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F09AC4E18DC2B0400F11549 /* QuartzCore.framework in Frameworks */,
+				84F5677A18DB6E1100F2C39E /* CoreGraphics.framework in Frameworks */,
+				84F5677C18DB6E1100F2C39E /* UIKit.framework in Frameworks */,
+				84F5677818DB6E1100F2C39E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F5678C18DB6E1100F2C39E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F5679118DB6E1100F2C39E /* XCTest.framework in Frameworks */,
+				84F5679318DB6E1100F2C39E /* UIKit.framework in Frameworks */,
+				84F5679218DB6E1100F2C39E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F09AC4918DC2AF200F11549 /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				6F09AC4A18DC2AF200F11549 /* iCarousel.h */,
+				6F09AC4B18DC2AF200F11549 /* iCarousel.m */,
+			);
+			path = iCarousel;
+			sourceTree = "<group>";
+		};
+		6F09AC4F18DC2BB800F11549 /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				6F09AC5018DC2BB800F11549 /* 1.jpg */,
+				6F09AC5118DC2BB800F11549 /* 2.jpg */,
+				6F09AC5218DC2BB800F11549 /* 3.jpg */,
+				6F09AC5318DC2BB800F11549 /* 4.jpg */,
+				6F09AC5418DC2BB800F11549 /* 5.jpg */,
+				6F09AC5518DC2BB800F11549 /* 6.jpg */,
+			);
+			path = Photos;
+			sourceTree = "<group>";
+		};
+		6F2E15CD18DC28A900F32A58 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				6F09AC6218DC3A6000F11549 /* top_bar_white_marker@2x.png */,
+				6F2E15CE18DC28A900F32A58 /* Default-568h@2x.png */,
+				6F2E15CF18DC28A900F32A58 /* Default@2x.png */,
+				6F2E15D018DC28A900F32A58 /* default_background-568h@2x.jpg */,
+				6F2E15D118DC28A900F32A58 /* default_background@2x.jpg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		84F5676B18DB6E1100F2C39E = {
+			isa = PBXGroup;
+			children = (
+				84F5677D18DB6E1100F2C39E /* DatingApp */,
+				84F5679618DB6E1100F2C39E /* DatingAppTests */,
+				84F5677618DB6E1100F2C39E /* Frameworks */,
+				84F5677518DB6E1100F2C39E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84F5677518DB6E1100F2C39E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84F5677418DB6E1100F2C39E /* DatingApp.app */,
+				84F5678F18DB6E1100F2C39E /* DatingAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84F5677618DB6E1100F2C39E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F09AC4D18DC2B0400F11549 /* QuartzCore.framework */,
+				84F5677718DB6E1100F2C39E /* Foundation.framework */,
+				84F5677918DB6E1100F2C39E /* CoreGraphics.framework */,
+				84F5677B18DB6E1100F2C39E /* UIKit.framework */,
+				84F5679018DB6E1100F2C39E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84F5677D18DB6E1100F2C39E /* DatingApp */ = {
+			isa = PBXGroup;
+			children = (
+				6F09AC5C18DC32CB00F11549 /* UIImage+ImageEffects.h */,
+				6F09AC5D18DC32CB00F11549 /* UIImage+ImageEffects.m */,
+				6F09AC4F18DC2BB800F11549 /* Photos */,
+				6F09AC4918DC2AF200F11549 /* iCarousel */,
+				6F2E15CD18DC28A900F32A58 /* Images */,
+				84F567A818DB6E9600F2C39E /* Controllers */,
+				84F567A918DB6E9600F2C39E /* View */,
+				84F567AA18DB6E9600F2C39E /* Model */,
+				84F5678618DB6E1100F2C39E /* DAAppDelegate.h */,
+				84F5678718DB6E1100F2C39E /* DAAppDelegate.m */,
+				84F567A618DB6E5300F2C39E /* MainStoryboard.storyboard */,
+				84F5678918DB6E1100F2C39E /* Images.xcassets */,
+				84F5677E18DB6E1100F2C39E /* Supporting Files */,
+			);
+			path = DatingApp;
+			sourceTree = "<group>";
+		};
+		84F5677E18DB6E1100F2C39E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84F5677F18DB6E1100F2C39E /* DatingApp-Info.plist */,
+				84F5678018DB6E1100F2C39E /* InfoPlist.strings */,
+				84F5678318DB6E1100F2C39E /* main.m */,
+				84F5678518DB6E1100F2C39E /* DatingApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84F5679618DB6E1100F2C39E /* DatingAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				84F5679C18DB6E1100F2C39E /* DatingAppTests.m */,
+				84F5679718DB6E1100F2C39E /* Supporting Files */,
+			);
+			path = DatingAppTests;
+			sourceTree = "<group>";
+		};
+		84F5679718DB6E1100F2C39E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84F5679818DB6E1100F2C39E /* DatingAppTests-Info.plist */,
+				84F5679918DB6E1100F2C39E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84F567A818DB6E9600F2C39E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				84F567AE18DB6EBC00F2C39E /* DAViewController.h */,
+				84F567AF18DB6EBC00F2C39E /* DAViewController.m */,
+				84F567AB18DB6EAE00F2C39E /* DAHomeViewController.h */,
+				84F567AC18DB6EAE00F2C39E /* DAHomeViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		84F567A918DB6E9600F2C39E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84F567B218DB703400F2C39E /* DAUserPanelView.h */,
+				84F567B318DB703400F2C39E /* DAUserPanelView.m */,
+				6F09AC5F18DC39B500F11549 /* DAPagingView.h */,
+				6F09AC6018DC39B500F11549 /* DAPagingView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84F567AA18DB6E9600F2C39E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84F5677318DB6E1100F2C39E /* DatingApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84F567A018DB6E1100F2C39E /* Build configuration list for PBXNativeTarget "DatingApp" */;
+			buildPhases = (
+				84F5677018DB6E1100F2C39E /* Sources */,
+				84F5677118DB6E1100F2C39E /* Frameworks */,
+				84F5677218DB6E1100F2C39E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DatingApp;
+			productName = DatingApp;
+			productReference = 84F5677418DB6E1100F2C39E /* DatingApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84F5678E18DB6E1100F2C39E /* DatingAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84F567A318DB6E1100F2C39E /* Build configuration list for PBXNativeTarget "DatingAppTests" */;
+			buildPhases = (
+				84F5678B18DB6E1100F2C39E /* Sources */,
+				84F5678C18DB6E1100F2C39E /* Frameworks */,
+				84F5678D18DB6E1100F2C39E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84F5679518DB6E1100F2C39E /* PBXTargetDependency */,
+			);
+			name = DatingAppTests;
+			productName = DatingAppTests;
+			productReference = 84F5678F18DB6E1100F2C39E /* DatingAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84F5676C18DB6E1100F2C39E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DA;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "GrowApp Solutions";
+				TargetAttributes = {
+					84F5678E18DB6E1100F2C39E = {
+						TestTargetID = 84F5677318DB6E1100F2C39E;
+					};
+				};
+			};
+			buildConfigurationList = 84F5676F18DB6E1100F2C39E /* Build configuration list for PBXProject "DatingApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 84F5676B18DB6E1100F2C39E;
+			productRefGroup = 84F5677518DB6E1100F2C39E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84F5677318DB6E1100F2C39E /* DatingApp */,
+				84F5678E18DB6E1100F2C39E /* DatingAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84F5677218DB6E1100F2C39E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F09AC5918DC2BB800F11549 /* 4.jpg in Resources */,
+				84F567A718DB6E5300F2C39E /* MainStoryboard.storyboard in Resources */,
+				6F09AC5B18DC2BB800F11549 /* 6.jpg in Resources */,
+				6F2E15D218DC28A900F32A58 /* Default-568h@2x.png in Resources */,
+				6F2E15D318DC28A900F32A58 /* Default@2x.png in Resources */,
+				6F09AC5718DC2BB800F11549 /* 2.jpg in Resources */,
+				6F2E15D418DC28A900F32A58 /* default_background-568h@2x.jpg in Resources */,
+				6F09AC5818DC2BB800F11549 /* 3.jpg in Resources */,
+				6F2E15D518DC28A900F32A58 /* default_background@2x.jpg in Resources */,
+				6F09AC5618DC2BB800F11549 /* 1.jpg in Resources */,
+				6F09AC6318DC3A6000F11549 /* top_bar_white_marker@2x.png in Resources */,
+				6F09AC5A18DC2BB800F11549 /* 5.jpg in Resources */,
+				84F5678218DB6E1100F2C39E /* InfoPlist.strings in Resources */,
+				84F5678A18DB6E1100F2C39E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F5678D18DB6E1100F2C39E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F5679B18DB6E1100F2C39E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84F5677018DB6E1100F2C39E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F567B418DB703400F2C39E /* DAUserPanelView.m in Sources */,
+				84F5678418DB6E1100F2C39E /* main.m in Sources */,
+				6F09AC5E18DC32CB00F11549 /* UIImage+ImageEffects.m in Sources */,
+				84F567B018DB6EBC00F2C39E /* DAViewController.m in Sources */,
+				6F09AC4C18DC2AF200F11549 /* iCarousel.m in Sources */,
+				84F5678818DB6E1100F2C39E /* DAAppDelegate.m in Sources */,
+				84F567AD18DB6EAE00F2C39E /* DAHomeViewController.m in Sources */,
+				6F09AC6118DC39B500F11549 /* DAPagingView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F5678B18DB6E1100F2C39E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F5679D18DB6E1100F2C39E /* DatingAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84F5679518DB6E1100F2C39E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84F5677318DB6E1100F2C39E /* DatingApp */;
+			targetProxy = 84F5679418DB6E1100F2C39E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84F5678018DB6E1100F2C39E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84F5678118DB6E1100F2C39E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		84F5679918DB6E1100F2C39E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84F5679A18DB6E1100F2C39E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84F5679E18DB6E1100F2C39E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		84F5679F18DB6E1100F2C39E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84F567A118DB6E1100F2C39E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Dmitriy Korolchenko (HQZ6CLN4R9)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DatingApp/DatingApp-Prefix.pch";
+				INFOPLIST_FILE = "DatingApp/DatingApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "A19066C2-11D8-4F16-A3DC-700964C99E7A";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		84F567A218DB6E1100F2C39E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Dmitriy Korolchenko (HQZ6CLN4R9)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DatingApp/DatingApp-Prefix.pch";
+				INFOPLIST_FILE = "DatingApp/DatingApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "3F5CA40D-6A46-48E8-B7EC-46EC5E096988";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		84F567A418DB6E1100F2C39E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DatingApp.app/DatingApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DatingApp/DatingApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DatingAppTests/DatingAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		84F567A518DB6E1100F2C39E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DatingApp.app/DatingApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DatingApp/DatingApp-Prefix.pch";
+				INFOPLIST_FILE = "DatingAppTests/DatingAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84F5676F18DB6E1100F2C39E /* Build configuration list for PBXProject "DatingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F5679E18DB6E1100F2C39E /* Debug */,
+				84F5679F18DB6E1100F2C39E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84F567A018DB6E1100F2C39E /* Build configuration list for PBXNativeTarget "DatingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F567A118DB6E1100F2C39E /* Debug */,
+				84F567A218DB6E1100F2C39E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84F567A318DB6E1100F2C39E /* Build configuration list for PBXNativeTarget "DatingAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F567A418DB6E1100F2C39E /* Debug */,
+				84F567A518DB6E1100F2C39E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84F5676C18DB6E1100F2C39E /* Project object */;
+}
