@@ -26,30 +26,42 @@
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <state key="highlighted" image="people_icon_selected.png"/>
+                            <connections>
+                                <action selector="btn_Click:" destination="SXg-h6-lnc" eventType="touchUpInside" id="OxN-jd-67a"/>
+                            </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wZy-Gf-rF7" userLabel="Button - look">
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wZy-Gf-rF7" userLabel="Button - look">
                             <rect key="frame" x="60" y="23" width="30" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" image="look_icon.png">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <state key="highlighted" image="look_icon_selected.png"/>
+                            <connections>
+                                <action selector="btn_Click:" destination="SXg-h6-lnc" eventType="touchUpInside" id="8AG-nF-hHY"/>
+                            </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="NbB-K1-OwZ" userLabel="Button - like">
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="NbB-K1-OwZ" userLabel="Button - like">
                             <rect key="frame" x="100" y="23" width="30" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" image="like_icon.png">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <state key="highlighted" image="like_icon_selected.png"/>
+                            <connections>
+                                <action selector="btn_Click:" destination="SXg-h6-lnc" eventType="touchUpInside" id="3HE-vM-3FI"/>
+                            </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="IhM-A9-Rav" userLabel="Button - chat">
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="IhM-A9-Rav" userLabel="Button - chat">
                             <rect key="frame" x="140" y="23" width="30" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" image="chat_icon.png">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <state key="highlighted" image="chat_icon_selected.png"/>
+                            <connections>
+                                <action selector="btn_Click:" destination="SXg-h6-lnc" eventType="touchUpInside" id="kqx-tm-Uu3"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -83,6 +95,10 @@
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
                 </view>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Ukb-eN-gFA">
+                    <rect key="frame" x="174" y="-4" width="100" height="100"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
             <connections>
@@ -93,6 +109,7 @@
                 <outlet property="btnPeople" destination="S6Z-ap-S1X" id="QzR-bg-ljF"/>
                 <outlet property="container" destination="FMa-Ki-59V" id="y7I-Zy-ha8"/>
                 <outlet property="cursor" destination="RoP-EN-Pec" id="CVj-7S-M3P"/>
+                <outlet property="imgAnimation" destination="Ukb-eN-gFA" id="TWS-9Q-3aS"/>
                 <outlet property="imgAvatar" destination="8U1-HZ-bD8" id="0Uc-Iy-B1s"/>
                 <outlet property="vAvatar" destination="Mdr-bg-d96" id="Rum-st-Q36"/>
             </connections>

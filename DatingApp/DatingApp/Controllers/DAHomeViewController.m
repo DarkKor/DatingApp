@@ -72,9 +72,15 @@
     carousel.alpha = 0;
     
     self.notificationPanel = [DAUserPanelView create];
-    self.notificationPanel.center = CGPointMake(160, 60);
-    //self.notificationPanel.backgroundColor = [UIColor redColor];
+    self.notificationPanel.center = CGPointMake(160, 75);
+    
+    self.bottomPanel = [DABottomPanel create];
+    self.bottomPanel.center = CGPointMake(160, self.view.frame.size.height + 50);
+    self.bottomPanel.alpha = 0;
+    
+    
     [self.view addSubview:self.notificationPanel];
+    [self.view addSubview:self.bottomPanel];
     
     CGRect rect = self.paging.frame;
     CGPoint center = self.paging.center;
@@ -94,12 +100,41 @@
                              rect.origin.y = center.y - rect.size.height / 2;
                              self.paging.frame = rect;
                              self.paging.alpha = 1.0;
+                             
+                             rect = self.lblHi.frame;
+                             rect.origin.y += 14;
+                             self.lblHi.frame = rect;
+                             self.lblHi.alpha = 1.0;
+                             
+                             self.bottomPanel.center = CGPointMake(160, self.view.frame.size.height - 40);
+                             self.bottomPanel.alpha = 1.0;
                          } completion:^(BOOL finished) {
                              self.photos = [self.photos subarrayWithRange:NSMakeRange(1, self.photos.count - 1)];
                              self.bluredPhotos = [self.bluredPhotos subarrayWithRange:NSMakeRange(1, self.bluredPhotos.count - 1)];
                              carousel.currentItemIndex = 0;
                              [carousel reloadData];
+                             
+                             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+                                 [self premiumAnimation];
+                                 
+                                 [UIView animateWithDuration:0.3
+                                                  animations:^{
+                                                      self.lblHi.alpha = 0.0;
+                                                      CGRect r = self.lblHi.frame;
+                                                      r.origin.x -= 50;
+                                                      self.lblHi.frame = r;
+                                                  }];
+                             });
                          }];
+    }];
+}
+
+- (void)premiumAnimation
+{
+    [self.notificationPanel premiumAnimation:^{
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 2 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+            [self premiumAnimation];
+        });
     }];
 }
 
@@ -167,7 +202,9 @@
         
         transform = CATransform3DTranslate(transform, 0.0f, 0.0f, -radius);
         transform = CATransform3DRotate(transform, angle, 0.0f, 1.0f, 0.0f);
-        return CATransform3DTranslate(transform, 0.0f, 0.0f, radius + 0.01f);
+        transform = CATransform3DTranslate(transform, 0.0f, 0.0f, radius + 0.01f);
+        
+        return transform;
     }
     else
     {
@@ -195,14 +232,14 @@
             CGFloat val = 1 + offset;
             self.imgBack1.alpha = val;
             self.imgBack1.image = self.bluredPhotos[index];
-            NSLog(@"alfa 1 = %.2f", val);
+            //NSLog(@"alfa 1 = %.2f", val);
         }
         else
         {
             CGFloat val = 1 - offset;
             self.imgBack2.alpha = val;
             self.imgBack2.image = self.bluredPhotos[index];
-            NSLog(@"alfa 2 = %.2f", val);
+            //NSLog(@"alfa 2 = %.2f", val);
 
         }
     }

@@ -34,6 +34,13 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Познакомимся?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OmD-f4-7DD">
+                                <rect key="frame" x="21" y="105" width="278" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="16"/>
+                                <color key="textColor" red="0.76668648097826086" green="0.76668648097826086" blue="0.76668648097826086" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -41,6 +48,7 @@
                         <outlet property="carousel" destination="gz2-6T-XNf" id="R4v-9k-O2b"/>
                         <outlet property="imgBack1" destination="Wos-eY-qs5" id="7CT-BU-Biu"/>
                         <outlet property="imgBack2" destination="As3-bC-4Mr" id="XX2-kW-3EE"/>
+                        <outlet property="lblHi" destination="OmD-f4-7DD" id="ZyS-Hd-fPq"/>
                         <outlet property="paging" destination="944-jZ-DAs" id="j21-e6-2AF"/>
                     </connections>
                 </viewController>

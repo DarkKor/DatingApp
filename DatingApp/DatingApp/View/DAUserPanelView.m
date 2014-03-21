@@ -13,6 +13,9 @@
 {
     CGPoint btnAvatarPoint;
     CGPoint imgAvatarPoint;
+    
+    __strong NSMutableArray *premiumFrames;
+    __strong NSMutableArray *invertedPremiumFrames;
 }
 
 - (id)initWithFrame:(CGRect)frame
@@ -29,6 +32,28 @@
     if (self = [super initWithCoder:aDecoder])
     {
         NSLog(@"init from xib");
+        
+        premiumFrames = [[NSMutableArray alloc] init];
+        invertedPremiumFrames = [[NSMutableArray alloc] init];
+        for (int i = 1; i <= 144; i++)
+        {
+            NSString *name = [NSString stringWithFormat:@"premium_animation_%d.png", 145 - i];
+            NSLog(@"name = %@", name);
+            UIImage *image = [UIImage imageNamed:name];
+            [premiumFrames addObject:image];
+        }
+        
+        invertedPremiumFrames = premiumFrames;
+        
+        /*
+        for (int i = 143; i >= 0; i--)
+        {
+            [invertedPremiumFrames addObject:premiumFrames[i]];
+        }
+         */
+        
+        self.imgAnimation.animationRepeatCount = 1;
+        self.imgAnimation.image = premiumFrames[0];
     }
     return self;
 }
@@ -55,6 +80,20 @@
             return userPanel;
         }
     return nil;
+}
+
+- (void)premiumAnimation:(void(^)())didFinish
+{
+    self.imgAnimation.hidden = NO;
+    self.imgAnimation.animationImages = premiumFrames;
+    self.imgAnimation.animationDuration = 5.0;
+    [self.imgAnimation startAnimating];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 5 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        [self.imgAnimation stopAnimating];
+        self.imgAnimation.hidden = YES;
+        if (didFinish != nil)
+            didFinish();
+    });
 }
 
 - (void)startAnimate:(void(^)())didFinish
@@ -143,6 +182,29 @@
             didFinish();
         }];
     }];
+}
+
+- (IBAction)btn_Click:(id)sender
+{
+    UIButton *btn = (UIButton *)sender;
+    [self setCurrentIndex:btn.tag animated:YES];
+}
+
+- (void)setCurrentIndex:(NSInteger)currentIndex animated:(BOOL)animated
+{
+    CGRect rect = self.cursor.frame;
+    rect.origin.x = [self centerForIndex:self.currentIndex] - rect.size.width / 2;
+    self.cursor.frame = rect;
+    self.currentIndex = currentIndex;
+    [UIView animateWithDuration:0.1
+                     animations:^{
+                         CGRect rect = self.cursor.frame;
+                         rect.origin.x = [self centerForIndex:self.currentIndex];
+                         self.cursor.frame = rect;
+
+                     } completion:^(BOOL finished) {
+                         
+                     }];
 }
 
 - (CGFloat)centerForIndex:(NSInteger)index

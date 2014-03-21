@@ -19,10 +19,14 @@
 @property (nonatomic) IBOutlet UIView *vAvatar;
 @property (nonatomic) IBOutlet UIView *container;
 @property (nonatomic) IBOutlet UIView *cursor;
+@property (nonatomic) IBOutlet UIImageView *imgAnimation;
 
 @property (nonatomic, assign) NSInteger currentIndex;
 
 + (DAUserPanelView *)create;
 - (void)startAnimate:(void(^)())didFinish;
+- (void)premiumAnimation:(void(^)())didFinish;
+- (void)setCurrentIndex:(NSInteger)currentIndex animated:(BOOL)animated;
+- (IBAction)btn_Click:(id)sender;
 
 @end
