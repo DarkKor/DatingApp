@@ -1,27 +1,48 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="p78-U5-qSs">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="p78-U5-qSs">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="4nf-pE-lqY">
             <objects>
-                <viewController storyboardIdentifier="homeID" id="p78-U5-qSs" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="homeID" id="p78-U5-qSs" customClass="DAHomeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qpa-Nz-p1E">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm a first view controller" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UD8-9q-bV2">
-                                <rect key="frame" x="66" y="261" width="188" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Wos-eY-qs5">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="As3-bC-4Mr">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" id="gz2-6T-XNf" customClass="iCarousel">
+                                <rect key="frame" x="0.0" y="124" width="320" height="300"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="p78-U5-qSs" id="Dec-kj-6yD"/>
+                                    <outlet property="delegate" destination="p78-U5-qSs" id="EGT-bg-mbS"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" id="944-jZ-DAs" customClass="DAPagingView">
+                                <rect key="frame" x="0.0" y="259" width="20" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="carousel" destination="gz2-6T-XNf" id="R4v-9k-O2b"/>
+                        <outlet property="imgBack1" destination="Wos-eY-qs5" id="7CT-BU-Biu"/>
+                        <outlet property="imgBack2" destination="As3-bC-4Mr" id="XX2-kW-3EE"/>
+                        <outlet property="paging" destination="944-jZ-DAs" id="j21-e6-2AF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0fs-5y-ArF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

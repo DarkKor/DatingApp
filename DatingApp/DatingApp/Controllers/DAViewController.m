@@ -37,6 +37,13 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    UIImageView *imageBackground = [[UIImageView alloc] initWithFrame:self.view.bounds];
+    UIImage *image = IS_IPHONE_5 ? [UIImage imageNamed:@"Default-568h.png"] : [UIImage imageNamed:@"Default.png"];
+    imageBackground.image = image;
+    imageBackground.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+    [self.view addSubview:imageBackground];
+    [self.view sendSubviewToBack:imageBackground];
 }
 
 - (void)didReceiveMemoryWarning
