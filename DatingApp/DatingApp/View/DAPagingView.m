@@ -37,7 +37,7 @@
             v.center = CGPointMake(self.frame.size.width / 2, 1 + 3 + i * h);
             v.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin;
             [self addSubview:v];
-            v.alpha = i == 3 ? 1.0 : 0.5;
+            v.alpha = i == 1 ? 1.0 : 0.5;
         }
     }
     return self;
