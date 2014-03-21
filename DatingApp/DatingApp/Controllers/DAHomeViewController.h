@@ -11,6 +11,7 @@
 #import "iCarousel.h"
 #import "UIImage+ImageEffects.h"
 #import "DAPagingView.h"
+#import "DAUserPanelView.h"
 
 @interface DAHomeViewController : DAViewController <iCarouselDataSource, iCarouselDelegate>
 {
@@ -22,5 +23,6 @@
 @property (nonatomic, strong) IBOutlet UIImageView *imgBack1;
 @property (nonatomic, strong) IBOutlet UIImageView *imgBack2;
 @property (nonatomic, strong) IBOutlet DAPagingView *paging;
+@property (nonatomic, strong) IBOutlet DAUserPanelView *notificationPanel;
 
 @end
